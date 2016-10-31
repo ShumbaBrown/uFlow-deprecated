@@ -1,3 +1,5 @@
+import math
+
 def ConvertToCartesianGraph(points):
     # Accepts a list of points and return a list of (x, y)
     # values that represent the points on a cartesian graph
@@ -10,6 +12,9 @@ def ConvertToCartesianGraph(points):
     y = 0
 
     for point in points:
+        pass
         # Calculate (x, y) value
 
     return listOfCartesianPoints
+
+print(math.cos(3))
