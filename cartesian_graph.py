@@ -25,5 +25,6 @@ def ConvertToCartesianGraph(points):
     graph.graphPoints(listOfCartesianPoints)
     return listOfCartesianPoints
 
+
 V = [100, 75, 50, 100, 100, 25, 50, 75]
 ConvertToCartesianGraph(V)
