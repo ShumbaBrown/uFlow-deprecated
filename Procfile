@@ -1,0 +1,1 @@
+web: gunicorn blog.wgsi —-log-file -
