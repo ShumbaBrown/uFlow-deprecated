@@ -1,0 +1,23 @@
+Dev Sprint #1:
+==================
+
+I need a function that will take a vector V, of floating point values (where each value represent the scores for various characteristics measured in a psychological survey) and return a list of (x,y) points. Each (x,y) point represents a cartesian point on a radar graph.
+
+def convert2Point(V):  // return [ [x0,y0], [x1, y1],......]
+
+
+Please view the following wikipedia page to conceptually see a visual of a radar graph. https://en.wikipedia.org/wiki/Radar_chart
+
+For our project, each point in our vector will represent a point on the line of one of the spokes in the radar graph.  Each spoke will represent one of the characteristics measured using our survey.  The origin of the graph is (0,0).
+
+Solution:
+
+Given there are N points in the vector V, we can determine that the number of characterstics we need to plot is N, and the number of spkes is N. Therefore, we can divide 360 degrees by N, to get spokes that form equivalent angles around the orign (0,0).
+
+The Algorithm:
+
+We can take each value in V, and represent it on a cartesian graph as a point (x, 0).  Then we can use the rotation formula about the origin (0,0), to determine the point given the angle Theta (see link below).
+
+https://academo.org/demos/rotation-about-point/
+
+Remember that you calculated each Theta by dividing 360 by N.
